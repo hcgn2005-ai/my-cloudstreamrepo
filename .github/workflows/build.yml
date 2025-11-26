@@ -2,9 +2,9 @@ name: Build CloudStream Plugin
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master", "main" ]
+    branches: [ "main" ]
 
 permissions:
   contents: write
@@ -26,8 +26,10 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew
+      - name: Ensure gradlew is executable
+        run: |
+          ls -la
+          chmod +x ./gradlew
 
       - name: Build Cloudstream Plugin
         run: ./gradlew make
