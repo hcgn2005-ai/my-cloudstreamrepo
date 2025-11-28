@@ -2,9 +2,9 @@ name: Build CloudStream Plugin
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "builds" ]  # Updated to include "builds" as your second branch
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "builds" ]  # Updated to include "builds" as your second branch
 
 permissions:
   contents: write
