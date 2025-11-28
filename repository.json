@@ -1,1 +1,12 @@
+// {
+  "name": "Anikai CloudStream Repository",
+  "description": "A repository for the Anikai CloudStream extension plugin, providing anime streaming capabilities.",
+  "manifestVersion": 1,
+  "pluginLists": [
+    {
+      "name": "Anikai Plugins",
+      "url": "https://raw.githubusercontent.com/hcg2005-ai/my-cloudstreamrepo/main/plugins.json"
+    }
+  ]
+}
 
